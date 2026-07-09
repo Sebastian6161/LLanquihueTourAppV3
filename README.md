@@ -2,13 +2,13 @@
 
 Proyecto desarrollado para la asignatura **Desarrollo Orientado a Objetos I** de **Duoc UC**.
 
-En esta versión del proyecto se amplía el sistema de la agencia turística **Llanquihue Tour**, incorporando conceptos fundamentales de la Programación Orientada a Objetos como **interfaces, herencia, polimorfismo, uso de `instanceof`, colecciones genéricas y una interfaz gráfica con JOptionPane**.
+Esta versión corresponde a la **Actividad Sumativa de la Semana 8**, donde se amplía el sistema de la agencia turística **Llanquihue Tour** aplicando conceptos fundamentales de Programación Orientada a Objetos como interfaces, herencia, polimorfismo, colecciones genéricas, uso de `instanceof` e interfaz gráfica mediante `JOptionPane`.
 
 ---
 
-## 📌 Objetivo
+# 📌 Objetivo del proyecto
 
-Desarrollar un sistema capaz de gestionar distintas entidades de una agencia de turismo mediante una arquitectura orientada a objetos, permitiendo registrar y visualizar información desde una interfaz gráfica sencilla.
+Desarrollar un sistema orientado a objetos que permita gestionar distintas entidades de una agencia de turismo mediante una interfaz gráfica simple, reutilizando la estructura creada en las actividades anteriores e incorporando nuevos conceptos de Java.
 
 ---
 
@@ -17,7 +17,7 @@ Desarrollar un sistema capaz de gestionar distintas entidades de una agencia de 
 - Java 23
 - IntelliJ IDEA
 - Maven
-- JOptionPane (Swing)
+- Swing (JOptionPane)
 - Git
 - GitHub
 
@@ -26,98 +26,140 @@ Desarrollar un sistema capaz de gestionar distintas entidades de una agencia de 
 # 📂 Estructura del proyecto
 
 ```
-src
-└── main
-    └── java
-        ├── data
-        │   ├── GestorServicios.java
-        │   └── GestorEntidades.java
-        │
-        ├── model
-        │   ├── ServicioTuristico.java
-        │   ├── RutaGastronomica.java
-        │   ├── PaseoLacustre.java
-        │   ├── ExcursionCultural.java
-        │   ├── Registrable.java
-        │   ├── RecursoAgencia.java
-        │   ├── GuiaTuristico.java
-        │   ├── Vehiculo.java
-        │   └── ColaboradorExterno.java
-        │
-        └── ui
-            ├── Main.java
-            └── VentanaEntidades.java
+LLanquihueTour_S8
+│
+├── images
+│
+├── src
+│   └── main
+│       └── java
+│
+│           ├── data
+│           │      GestorServicios.java
+│           │      GestorEntidades.java
+│           │
+│           ├── model
+│           │      ServicioTuristico.java
+│           │      RutaGastronomica.java
+│           │      PaseoLacustre.java
+│           │      ExcursionCultural.java
+│           │
+│           │      Registrable.java
+│           │      RecursoAgencia.java
+│           │      GuiaTuristico.java
+│           │      Vehiculo.java
+│           │      ColaboradorExterno.java
+│           │
+│           └── ui
+│                  Main.java
+│                  VentanaEntidades.java
+│
+├── pom.xml
+└── README.md
 ```
 
 ---
 
 # 🧩 Funcionalidades
 
-✅ Gestión de entidades mediante una interfaz común (`Registrable`).
+- Registro de guías turísticos.
+- Registro de vehículos.
+- Visualización de entidades registradas.
+- Implementación de interfaces.
+- Uso de herencia mediante una clase abstracta.
+- Aplicación de polimorfismo.
+- Uso de `ArrayList<Registrable>`.
+- Identificación de objetos utilizando `instanceof`.
+- Validación de datos ingresados por el usuario.
+- Interfaz gráfica desarrollada con `JOptionPane`.
 
-✅ Implementación de herencia utilizando la clase abstracta `RecursoAgencia`.
+---
 
-✅ Polimorfismo mediante `ArrayList<Registrable>`.
+# 💻 Conceptos de Programación Orientada a Objetos aplicados
 
-✅ Identificación de tipos utilizando `instanceof`.
+## Interfaces
 
-✅ Registro de:
+Se implementó la interfaz **Registrable**, permitiendo que distintas entidades compartan un comportamiento común mediante el método `mostrarResumen()`.
 
-- Guías turísticos
-- Vehículos
+---
 
-✅ Visualización de entidades registradas.
+## Herencia
 
-✅ Validación de datos:
+Las clases:
 
-- Campos vacíos.
-- Cancelación de ingreso.
-- Validación de números.
-- Opciones inválidas del menú.
+- GuiaTuristico
+- Vehiculo
+- ColaboradorExterno
 
-✅ Interfaz gráfica desarrollada con JOptionPane.
+heredan de la clase abstracta **RecursoAgencia**, reutilizando atributos y comportamiento común.
+
+---
+
+## Polimorfismo
+
+Todas las entidades se almacenan dentro de una colección:
+
+```java
+ArrayList<Registrable>
+```
+
+permitiendo trabajar con diferentes tipos de objetos utilizando una misma referencia.
+
+---
+
+## instanceof
+
+Durante el recorrido de la colección se utiliza el operador `instanceof` para identificar el tipo específico de cada objeto y mostrar información personalizada.
 
 ---
 
 # 📷 Capturas del proyecto
 
-## Menú principal
+## 🏠 Menú principal
 
-![Menú](images/menu.png)
+Pantalla inicial del sistema, donde el usuario puede acceder a las distintas opciones disponibles para registrar y visualizar entidades de la agencia.
 
----
-
-## Registro de guía turístico
-
-![Guía](images/guia.png)
+![Menú Principal](images/Menu.png)
 
 ---
 
-## Registro de vehículo
+## 👨‍💼 Registro de guía turístico
 
-![Vehículo](images/vehiculo.png)
+Ejemplo del registro exitoso de un guía turístico utilizando la interfaz gráfica desarrollada con `JOptionPane`.
 
----
-
-## Entidades registradas
-
-![Entidades](images/entidades.png)
+![Registro Guía](images/guia.png)
 
 ---
 
-# ▶️ Cómo ejecutar
+## 🚐 Registro de vehículo
 
-1. Clonar el repositorio.
+Confirmación del registro exitoso de un vehículo perteneciente a la agencia turística.
 
-```
-git clone https://github.com/TU-USUARIO/LLanquihueTour_S8.git
+![Registro Vehículo](images/Vehiculo.png)
+
+---
+
+## 📋 Visualización de entidades registradas
+
+Listado completo de las entidades almacenadas en la colección `ArrayList<Registrable>`, mostrando además la identificación del tipo mediante `instanceof`.
+
+![Entidades Registradas](images/entidades.png)
+
+---
+
+# ▶️ Cómo ejecutar el proyecto
+
+1. Clonar el repositorio
+
+```bash
+git clone https://github.com/Sebastian6161/LLanquihueTour_S8.git
 ```
 
 2. Abrir el proyecto con IntelliJ IDEA.
 
 3. Esperar que Maven descargue las dependencias.
 
-4. Ejecutar:
+4. Ejecutar la clase:
 
 ```
 ui.Main
@@ -125,17 +167,21 @@ ui.Main
 
 ---
 
-# 💻 Conceptos aplicados
+# 📚 Aprendizajes obtenidos
 
-- Programación Orientada a Objetos (POO)
-- Herencia
-- Interfaces
-- Polimorfismo
-- Clases abstractas
-- Colecciones (`ArrayList`)
-- Uso de `instanceof`
-- Validación de datos
-- Interfaz gráfica con Swing (`JOptionPane`)
+Durante el desarrollo de esta actividad se reforzaron los siguientes contenidos:
+
+- Programación Orientada a Objetos.
+- Interfaces.
+- Clases abstractas.
+- Herencia.
+- Polimorfismo.
+- Colecciones (`ArrayList`).
+- Operador `instanceof`.
+- Validación de datos.
+- Desarrollo de interfaces gráficas básicas con Swing (`JOptionPane`).
+- Organización de proyectos Maven.
+- Control de versiones con Git y GitHub.
 
 ---
 
@@ -149,7 +195,7 @@ Duoc UC
 
 ---
 
-# 📚 Asignatura
+# 📖 Asignatura
 
 **Desarrollo Orientado a Objetos I**
 
