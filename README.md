@@ -12,7 +12,7 @@ Desarrollar un sistema orientado a objetos que permita gestionar distintas entid
 
 ---
 
-# 🚀 Tecnologías utilizadas
+# 📌 Tecnologías utilizadas
 
 - Java 23
 - IntelliJ IDEA
@@ -60,7 +60,7 @@ LLanquihueTour_S8
 
 ---
 
-# 🧩 Funcionalidades
+# 📌 Funcionalidades
 
 - Registro de guías turísticos.
 - Registro de vehículos.
