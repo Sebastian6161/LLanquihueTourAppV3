@@ -113,9 +113,9 @@ Durante el recorrido de la colección se utiliza el operador `instanceof` para i
 
 ---
 
-# 📷 Capturas del proyecto
+#  Capturas del proyecto
 
-## 🏠 Menú principal
+##  Menú principal
 
 Pantalla inicial del sistema, donde el usuario puede acceder a las distintas opciones disponibles para registrar y visualizar entidades de la agencia.
 
