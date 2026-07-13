@@ -6,13 +6,13 @@ Esta versión corresponde a la **Actividad Sumativa de la Semana 8**, donde se a
 
 ---
 
-# 📌 Objetivo del proyecto
+#  Objetivo del proyecto
 
 Desarrollar un sistema orientado a objetos que permita gestionar distintas entidades de una agencia de turismo mediante una interfaz gráfica simple, reutilizando la estructura creada en las actividades anteriores e incorporando nuevos conceptos de Java.
 
 ---
 
-# 📌 Tecnologías utilizadas
+#  Tecnologías utilizadas
 
 - Java 23
 - IntelliJ IDEA
@@ -123,7 +123,7 @@ Pantalla inicial del sistema, donde el usuario puede acceder a las distintas opc
 
 ---
 
-## 👨‍💼 Registro de guía turístico
+##  Registro de guía turístico
 
 Ejemplo del registro exitoso de un guía turístico utilizando la interfaz gráfica desarrollada con `JOptionPane`.
 
@@ -131,7 +131,7 @@ Ejemplo del registro exitoso de un guía turístico utilizando la interfaz gráf
 
 ---
 
-## 🚐 Registro de vehículo
+## 🚐Registro de vehículo
 
 Confirmación del registro exitoso de un vehículo perteneciente a la agencia turística.
 
@@ -139,7 +139,7 @@ Confirmación del registro exitoso de un vehículo perteneciente a la agencia tu
 
 ---
 
-## 📋 Visualización de entidades registradas
+##  Visualización de entidades registradas
 
 Listado completo de las entidades almacenadas en la colección `ArrayList<Registrable>`, mostrando además la identificación del tipo mediante `instanceof`.
 
@@ -147,7 +147,7 @@ Listado completo de las entidades almacenadas en la colección `ArrayList<Regist
 
 ---
 
-# ▶️ Cómo ejecutar el proyecto
+#  Cómo ejecutar el proyecto
 
 1. Clonar el repositorio
 
@@ -167,7 +167,7 @@ ui.Main
 
 ---
 
-# 📚 Aprendizajes obtenidos
+#  Aprendizajes obtenidos
 
 Durante el desarrollo de esta actividad se reforzaron los siguientes contenidos:
 
@@ -185,7 +185,7 @@ Durante el desarrollo de esta actividad se reforzaron los siguientes contenidos:
 
 ---
 
-# 👨‍💻 Autor
+# Autor
 
 **Sebastián Ignacio Ávila Sanhueza**
 
@@ -195,7 +195,7 @@ Duoc UC
 
 ---
 
-# 📖 Asignatura
+#  Asignatura
 
 **Desarrollo Orientado a Objetos I**
 
