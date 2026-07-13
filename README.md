@@ -1,4 +1,4 @@
-# 🌄 Llanquihue Tour - Semana 8
+# Llanquihue Tour - Semana 8
 
 Proyecto desarrollado para la asignatura **Desarrollo Orientado a Objetos I** de **Duoc UC**.
 
