@@ -181,7 +181,7 @@ Durante el desarrollo de esta actividad se reforzaron los siguientes contenidos:
 - Validación de datos.
 - Desarrollo de interfaces gráficas básicas con Swing (`JOptionPane`).
 - Organización de proyectos Maven.
-- Control de versiones con Git y GitHub.
+
 
 ---
 
