@@ -131,7 +131,7 @@ Ejemplo del registro exitoso de un guía turístico utilizando la interfaz gráf
 
 ---
 
-## 🚐Registro de vehículo
+## Registro de vehículo
 
 Confirmación del registro exitoso de un vehículo perteneciente a la agencia turística.
 
