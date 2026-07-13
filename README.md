@@ -23,7 +23,7 @@ Desarrollar un sistema orientado a objetos que permita gestionar distintas entid
 
 ---
 
-# 📂 Estructura del proyecto
+#  Estructura del proyecto
 
 ```
 LLanquihueTour_S8
@@ -60,7 +60,7 @@ LLanquihueTour_S8
 
 ---
 
-# 📌 Funcionalidades
+#  Funcionalidades
 
 - Registro de guías turísticos.
 - Registro de vehículos.
@@ -75,7 +75,7 @@ LLanquihueTour_S8
 
 ---
 
-# 💻 Conceptos de Programación Orientada a Objetos aplicados
+#  Conceptos de Programación Orientada a Objetos aplicados
 
 ## Interfaces
 
