@@ -152,7 +152,7 @@ Listado completo de las entidades almacenadas en la colección `ArrayList<Regist
 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/Sebastian6161/LLanquihueTour_S8.git
+git clone https://github.com/Sebastian6161/LLanquihueTourAppV3.git
 ```
 
 2. Abrir el proyecto con IntelliJ IDEA.
